@@ -57,9 +57,8 @@ The final results are as follows:
    Average error per data point: = 37865.09/1501 = 25.22 units
 
 5. Required function equation with unknowns :
-```
-\left(t\cos(28.11842^\circ)-e^{0.021389|t|}\sin(0.3t)\sin(28.11842^\circ)+54.90101\ ,\ 42+t\sin(28.11842^\circ)+e^{0.021389|t|}\sin(0.3t)\cos(28.11842^\circ)\right)
-```
+(t*cos(28.11842) - e^(0.021389*abs(t))*sin(0.3*t)*sin(28.11842) + 54.90101 , 42 + t*sin(28.11842) + e^(0.021389*abs(t))*sin(0.3*t)*cos(28.11842))
+
 
 ### Requirements ###
 ```
