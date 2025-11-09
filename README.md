@@ -3,15 +3,7 @@
 This project processes and visualizes the given xy_data.
 The script loads the data, performs interpolation, smoothing, and generates plots to help understand the patterns and trends.
 
-The main functionalities include:
-1. Loading and preprocessing the dataset
-2. Interpolating missing values
-3. Applying smoothing filters
-4. Plotting curves using Matplotlib
-
-The script is well-structured, easy to modify, and suitable for further data analysis or visualization tasks.
-
-*** Code/Methodology Explanation ***
+* Code/Methodology Explanation *
 
 1. Load data — the CSV contains columns x, y (t is assumed to be distributed uniformly between given range 6 to 60).
 
@@ -26,10 +18,10 @@ The script is well-structured, easy to modify, and suitable for further data ana
 6. Evaluation: computed final L1 (sum |dx|+|dy|) over uniformly sampled t. 
 
 
-*** Requirements *** 
+* Requirements *
 pip install scipy matplotlib pandas numpy
 
-*** How to Run ***
+* How to Run *
 
 Simply open the terminal in the project directory and run:
 ```
