@@ -54,7 +54,12 @@ The final results are as follows:
 
 4. Final metrics: (total data samples were 1501)    
    Total fitness error: 37865.09  
-   Average error per data point: = 37865.09/1501 = 25.22 units  
+   Average error per data point: = 37865.09/1501 = 25.22 units
+
+5. Required function equation with unknowns :
+```
+\left(t\cos(28.11842^\circ)-e^{0.021389|t|}\sin(0.3t)\sin(28.11842^\circ)+54.90101\ ,\ 42+t\sin(28.11842^\circ)+e^{0.021389|t|}\sin(0.3t)\cos(28.11842^\circ)\right)
+```
 
 ### Requirements ###
 ```
