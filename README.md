@@ -1,9 +1,8 @@
 ### Project Overview ###
 
-This project processes and visualizes the given xy_data.
-The script loads the data, performs interpolation, smoothing, and generates plots to help understand the patterns and trends.
+This project processes and visualizes the given xy_data. The script loads the given data, performs system identification, optimization using standard Differential Evolution and generates plots to help understand the closeness of simulated model with the given function. 
 
-* Code/Methodology Explanation *
+### Code/Methodology Explanation ###
 
 1. Load data — the CSV contains columns x, y (t is assumed to be distributed uniformly between given range 6 to 60).
 
@@ -18,10 +17,12 @@ The script loads the data, performs interpolation, smoothing, and generates plot
 6. Evaluation: computed final L1 (sum |dx|+|dy|) over uniformly sampled t. 
 
 
-* Requirements *
+### Requirements ###
+```
 pip install scipy matplotlib pandas numpy
+```
 
-* How to Run *
+### How to Run ###
 
 Simply open the terminal in the project directory and run:
 ```
