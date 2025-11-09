@@ -1,6 +1,21 @@
-### Project Overview ###
+### Problem Statement ###
 
-This project processes and visualizes the given xy_data. The script loads the given data, performs system identification, optimization using standard Differential Evolution and generates plots to help understand the closeness of simulated model with the given function. 
+Find the values of unknown variables in the given parametric equation of a curve given the x,y pairs in xy_data.csv :
+
+x=tcos(θ)−eM∣t∣sin(0.3t)sin(θ)+X
+𝑦=42+𝑡sin(𝜃)+𝑒𝑀∣𝑡∣sin(0.3𝑡)cos(𝜃)
+
+unknowns are θ, M, X.
+
+Given range for unknown params is :
+   1. 0deg<θdeg<50deg
+   2. −0.05<M<0.05
+   3. 0<X<100
+      
+parameter ‘t’ has range: 6<t<60
+
+Estimate the optimal values of the unknown parameters θ, M, and X such that the parametric curve best fits the given dataset.
+The quality of fit is evaluated using:  L1 distance between predicted curve and actual data points 
 
 ### Code/Methodology Explanation ###
 
@@ -19,7 +34,7 @@ This project processes and visualizes the given xy_data. The script loads the gi
 ### Results ###
 The final results are as follows:
 1. Results from Differential Evolution:
-   θ = 28.12° ;The curve is rotated by ~28 degrees.
+   θ = 28.12 deg ;The curve is rotated by ~28 degrees.
    M = 0.0214 ;Controls the growth/decay factor of the exponential term. Since M>0, the amplitude of the oscillation grows slightly with |t|.
    X = 54.90 ;Horizontal shift of the curve.
    L1 error ≈ 37865.10
